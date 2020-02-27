@@ -6,24 +6,34 @@
 
   <title>Rock Paper Scissors</title>
   <script defer="" rel="text/javascript" src="script.js"></script>
-  
+  <link rel="stylesheet" href="style.css">
+  <link href='https://fonts.googleapis.com/css?family=Wendy One' rel='stylesheet'>
 
 </head>
-<h1 class="banner_text">Rock Paper Scissors</h1>
-<div class="container" id="button">
-    <button onclick="playerRock()"class="buttons" id="rock" type="button">Rock</button>
-    <button onclick="playerScissors()"class="buttons" id="scissors" type="button">Scissors</button>
-    <button onclick="playerPaper()"class="buttons" id="paper" type="button">Paper</button>    
+<h1 class="banner_text">Rock Paper Scissors Game</h1>
+<h2 id= "score"> Score </h2>
+
+
+    <div class="scoreBoard">        
+        <div id="playerLabel" class="badge">Player</div>
+        <div id="compLabel" class="badge">Computer</div>
+        <span id="playerScore">0</span>
+        :
+        <span id="compScore">0</span>
+    </div>
+
+    <div id="gameOutcome"> First to five wins. Select move to begin.</div>
+
+<div class="container" id="PlayerChoices">
+    <img src="Rock.jpg" alt = "Rock" onclick="playerRock()"class="choices" id="rock">
+    <img src="Paper.jpg" alt ="Paper" onclick= "playerPaper()"class="choices" id="paper">
+    <img src="scissors.png" alt = "Scissors" onclick="playerScissors()"class="choices" id="scissors">
 </div>
-<div class="output">
-    <h2>Console:</h2>
-    <p id="scoreBoard" class="gameScore">Lets Play!</p>
-    <h2>Score:</h2>
-    <div class="gameScore">
-        <p class="gameScore" id="gamePlayer">Player:</p>
+
+    <!--<p class="gameScore" id="gamePlayer">Player:</p>
         <p class="gameScore" id="playerScore">0</p>
         <p class="gameScore" id="gameComputer">Computer:</p>
-        <p class="gameScore" id="compScore">0</p>
+        <p class="gameScore" id="compScore">0</p> -->
     </div>
 </div>
 
